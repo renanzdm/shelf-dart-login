@@ -1,0 +1,13 @@
+version: "3.3"
+services:
+ #CREATE DATABASE REDIS
+    redis:
+      image: "redis:alpine"
+      ports:
+        - "6379:6379"
+  #CREATE DATABASE MONGODB
+    database:
+      image: "mongo"
+      container_name: 'db_dart'
+      ports: 
+        - '27017:27017'
